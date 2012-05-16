@@ -66,6 +66,7 @@
 	}
 .segnormal {
 	font-family: Segoe;
+	font-weight: normal;
 	}
 	
 /* BODY AND GENERAL */	
@@ -78,10 +79,18 @@ body {
 	margin: 0;
 }
 
-.contain{
-	width: 960px;
-	margin: auto;
-}
+a[href]{text-decoration: none;}
+h1 {font-size:30px;}
+h2 {font-size:24px;}
+h3 {font-size:18px;}
+
+.contain{width: 960px;margin: auto;}
+.purple {color: #8c2dbd;}
+.darkpurple {color: #2e0a40}	
+.white{color: #fff;}
+.left {float: left;}
+.right {float: right;}
+.clear{clear: both;}	
 
 
 /* HEADERS */
@@ -101,13 +110,41 @@ body {
 	padding-top: 5px;
 }
 
-#logo
-	{
+#logo{
 	float: left;
 	width: 162px;
 	height: 95px;
 	}
-#head-navigation
+	
+#head-navigation {			/* NAVIGATION IN HEADER */ 
+	position: relative;
+	margin-top: 45px;
+	float: right;
+}
+#head-navigation ul {
+	margin: 0;
+	font-family: Segoe;
+	font-size: 14px;
+	font-weight: 200;
+	color: #fff;
+	list-style: none;
+}
+#head-navigation li {
+	float: left;
+	margin-right: 20px;
+}
+#head-navigation a {
+	text-decoration: none;
+	color: #fff;
+}
+#head-navigation a:hover {
+	text-decoration: none;
+	color: #2e0a40;
+}
+#head-navigation a:active {
+	text-decoration: none;
+	color: #2e0a40;
+}
 	
 	
 /* HOME PAGE SLIDER AREA */
@@ -123,12 +160,31 @@ body {
 	width: 960px;
 	height: 300px;
 	margin: auto;
-	
 }
+
+/* TOP BAR FOR NORMAL PAGES */
+	
+#top-bar{
+	background-color: #8c2dbd;
+	width: 100%;
+	height: 115px;
+	background: url('img/purple-shadow-small.png');
+}
+#top-bar-content{
+	width: 960px;
+	height: 115px;
+	margin: auto;
+}
+#top-bar-content img {
+	float: right;
+}
+#crumbs{
+	position: relative;
+	float:left;
+	margin-top:40px;	
+}
+
+
 	
 
-.purple {
-	color: #8c2dbd;
-	}
-	
 	
