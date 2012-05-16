@@ -79,10 +79,32 @@ body {
 	margin: 0;
 }
 
-a[href]{text-decoration: none;}
-h1 {font-size:30px;}
-h2 {font-size:24px;}
-h3 {font-size:18px;}
+body a [href] {text-decoration:none;font-style:inherit;color:#111111;}
+body a:visited{font-style:inherit;color:#111111;}
+body a:hover{font-style:inherit;color:#8c2dbd;}
+body a:active{font-style:inherit;color:#2e0a40;}
+
+#main {
+	width:960px;
+	height:800px;
+	margin: 30px auto 30px auto;
+}
+
+.divide {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width:100%;
+	height:3px;
+	background: url('img/hr.png');
+}
+
+
+
+
+h1 {font-size:30px;margin:0;}
+h2 {font-size:24px;margin:0;}
+h3 {font-size:18px;margin:0;}
+h4 {font-size:16px;margin:0;}
 
 .contain{width: 960px;margin: auto;}
 .purple {color: #8c2dbd;}
@@ -181,9 +203,43 @@ h3 {font-size:18px;}
 #crumbs{
 	position: relative;
 	float:left;
-	margin-top:40px;	
+	margin-top:60px;	
 }
 
+/* SIDEBAR */
+#sidebar{
+	position: relative;
+	background-color: #eeeeee;
+	width:310px;
+	height:700px;
+	float: right;
+	padding: 10px;
+}
+.widget{position: relative;margin-bottom: 25px;}
+
+#indexes {	}
+#indexes ul li {
+	list-style-type: square;
+	font-family: Georgia;
+	font-size: 12px;
+	margin-bottom:5px;
+}
+#indexes li a {text-decoration: none;color: #111;}
+#indexes li a:hover {font-style:inherit;color:#8c2dbd;}
+#indexes li a:active{font-style:inherit;color:#2e0a40;}
+#indexes li a:visited {font-style:inherit;color:#111;}
+
+#pop-rel p{	
+	margin-top:10px;
+	font-size:12px;
+	font-family: Georgia;
+	line-height: 20px;
+	color: #222;
+}
+
+/* FOOTER */
+
+/* LESSON ELEMENTS */
 
 	
 
