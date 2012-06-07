@@ -69,7 +69,7 @@
 	font-weight: normal;
 	}
 	
-/* BODY AND GENERAL */	
+																															/* BODY AND GENERAL */	
 	
 body {
 	background-color: #fff;
@@ -80,14 +80,20 @@ body {
 }
 
 a {text-decoration:none;color:#111111;}
-.more a:visited{font-style:inherit;color:#111111;}
-.more a:hover{font-style:inherit;color:#8c2dbd;}
-.more a:active{font-style:inherit;color:#2e0a40;}
+a:visited{font-style:inherit;color:#111111;}
+a:hover{font-style:inherit;color:#8c2dbd;}
+a:active{font-style:inherit;color:#2e0a40;}
+
+.redborder{border:red solid 1px;}
+.greenborder{border:green solid 1px;}
+.dashedwhite{border:white dashed 1px;}
+.dasheddark{border:gray dashed 1px;}
 
 #main {
 	
-	height:800px;
-	margin: 30px auto 30px auto;
+	width:960px;
+	height:100%;
+	margin: 30px auto;
 	
 }
 
@@ -104,17 +110,16 @@ hr {
 	position: relative;
 	float: right;
 }
-
 .more a {
 	text-decoration: none;
-	color: #111;
+	color: #8c2dbd;
 }
 
 
 
 h1 {font-size:30px;margin:0;}
 h2 {font-size:24px;margin:0;}
-h3 {font-size:18px;margin:0;}
+h3 {font-size:18px;margin:0 0 30px 0;}
 h4 {font-size:16px;margin:0;}
 
 .contain{width: 960px;height:100%;margin:auto;}
@@ -124,12 +129,17 @@ h4 {font-size:16px;margin:0;}
 .left {float: left;}
 .right {float: right;}
 .clear{clear: both;}	
+.rounded-corners {
+     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
 
 
-/* HEADERS */
+																																		/* HEADERS */
 
 #header {
-	/*border: red solid 1px;*/
 	width: 100%;
 	height: 115px;
 	margin: ;
@@ -179,8 +189,7 @@ h4 {font-size:16px;margin:0;}
 	color: #2e0a40;
 }
 	
-	
-/* HOME PAGE SLIDER AREA */
+																																/* HOME PAGE SLIDER AREA */
 	
 #home-slider {
 	background-color: #8c2dbd;
@@ -200,14 +209,14 @@ h4 {font-size:16px;margin:0;}
 	margin: 35px 0 0 15px;
 	width:200px;
 	height:220px;
-	border:white dashed 1px;
+	
 }
 .slide{
 	position:relative;
 	width:700px;
 	margin:50px 10px 0 10px;
 }
-/* TOP BAR FOR NORMAL PAGES */
+																														/* TOP BAR FOR NORMAL PAGES */
 	
 #top-bar{
 	background-color: #8c2dbd;
@@ -230,16 +239,19 @@ h4 {font-size:16px;margin:0;}
 }
 
 
-/* SIDEBAR */
+																															/* SIDEBAR */
 #sidebar{
 	position: relative;
-	background-color: #eeeeee;
-	width:310px;
-	height:700px;
+	background-color: #fcfcfc;
+	width:210px;
+	height:100%;
 	float: right;
 	padding: 10px;
 }
-.widget{position: relative;margin-bottom: 25px;}
+.widget{
+	position: relative;
+	margin-bottom: 25px;
+}
 
 .widget p{	
 	margin-top:10px;
@@ -264,9 +276,10 @@ h4 {font-size:16px;margin:0;}
 	height: 40px;
 }
 
-/* FOOTER */
+																																	/* FOOTER */
  
 #footer {
+	margin-top:50px;
 	width: 100%;
 	height: 115px;
 	background: url('img/footerbg.jpg');
@@ -292,39 +305,39 @@ h4 {font-size:16px;margin:0;}
 	text-align:center;
 }
  
-/* CONTENT / HOME PAGE */
+																																	/* CONTENT / HOME PAGE */
  
 .smallbox{
 	position:relative;
 	border:red solid 1px;
-	width:29%;
+	width:30%;
 	height:350px;
-	margin:10px 20px 10px 0;
+	margin:10px 0px 10px 0;
 	padding:10px;
 }
 .bigbox{
 	position:relative;
-	width:45%;
-	border:red solid 1px;
+	width:450px;
 	height:300px;
-	margin:10px 20px 10px 0;
+	margin:10px 0px 10px 0;
 	padding:10px;
 }
  
  
-/* CONTENT / LESSON ELEMENTS */
+																																	/* CONTENT / LESSON ELEMENTS */
 
 
 #post {
 	position: relative;
 	float: left;
-	width: 610px;
-	height: 100%;
+	width: 700px;
+	
 }
 #post p {
-	line-height: 22px;
+	line-height: 26px;
 	text-align: justify;
 	font-size: 14px;
+	
 }
 .intro {
 	width: 100%;
@@ -338,15 +351,54 @@ h4 {font-size:16px;margin:0;}
 	width:121px;
 	height: 121px;
 	background: url('img/intro-bg.png') no-repeat;
+	text-align:center;
+	font-size:16px;
+	line-height:110px;
 }
+
 .intro-txt{
 	position: relative;
 	float: right;
-	width: 420px;
+	width: 520px;
 	height: 100%;
 }
 .example{
+	margin-top:30px;
 	padding-left: 100px;
 	color: #999;
 	background: url('img/example.png') no-repeat;
+}
+.imp-box{
+	width:590px;
+	margin:30px auto;
+	height:100%;
+	background-color:#eee;
+	padding:10px;
+	color:green;
+}
+.imp-ill{
+	position:relative;
+	margin:15px 15px;
+	width:100px;
+	height:120px;
+}
+.imp-txt{
+	position:relative;
+	width:450px;
+}
+.youtube-player{
+    background-color:#eee;
+    padding: 10px;
+	position: relative;
+	width:560px;
+    margin:0 auto;
+	-moz-box-shadow: 0 0 5px 5px #ccc;
+	-webkit-box-shadow: 0 0 5px 5px #ccc;
+	box-shadow: 0 0 5px 5px #ccc;
+}
+/* pagination*/
+#paginate{
+	margin-top:20px;
+	text-align: center;
+	font-size: 16px;
 }
