@@ -188,13 +188,25 @@ h4 {font-size:16px;margin:0;}
 	height: 300px;
 	background: url('img/purple-shadow.png');
 }
-#home-slider-bg {
+.home-slider-bg {
 	background: url('img/gradient-purple.jpg') no-repeat;
 	width: 960px;
 	height: 300px;
 	margin: auto;
+	
 }
-
+.illustrated{
+	position:relative;
+	margin: 35px 0 0 15px;
+	width:200px;
+	height:220px;
+	border:white dashed 1px;
+}
+.slide{
+	position:relative;
+	width:700px;
+	margin:50px 10px 0 10px;
+}
 /* TOP BAR FOR NORMAL PAGES */
 	
 #top-bar{
@@ -280,7 +292,26 @@ h4 {font-size:16px;margin:0;}
 	text-align:center;
 }
  
-
+/* CONTENT / HOME PAGE */
+ 
+.smallbox{
+	position:relative;
+	border:red solid 1px;
+	width:29%;
+	height:350px;
+	margin:10px 20px 10px 0;
+	padding:10px;
+}
+.bigbox{
+	position:relative;
+	width:45%;
+	border:red solid 1px;
+	height:300px;
+	margin:10px 20px 10px 0;
+	padding:10px;
+}
+ 
+ 
 /* CONTENT / LESSON ELEMENTS */
 
 
